@@ -1,4 +1,5 @@
 import Head from "next/head";
+import EmptyPage from "../components/empty-page";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <p className="text-2xl">Hello Next</p>
+        <EmptyPage />
       </main>
     </div>
   );
