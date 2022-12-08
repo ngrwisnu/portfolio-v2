@@ -22,14 +22,18 @@ a {
 
 @layer components {
   .col-center {
-    @apply flex-col justify-center items-center;
+    @apply flex-col items-center justify-center;
   }
 
   .row-center {
-    @apply justify-center items-center;
+    @apply items-center justify-center;
   }
 
   .container-content {
-    @apply md:container mx-auto xl:max-w-7xl;
+    @apply mx-auto md:container xl:max-w-7xl;
+  }
+
+  .skills-title {
+    @apply mb-4 text-base font-semibold;
   }
 }
