@@ -28,4 +28,8 @@ a {
   .row-center {
     @apply justify-center items-center;
   }
+
+  .container-content {
+    @apply md:container mx-auto xl:max-w-7xl;
+  }
 }
