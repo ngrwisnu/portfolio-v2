@@ -1,6 +1,26 @@
 const data = {
   name: "Ngr Wisnu",
   label: "Front-end Developer",
+  contacts: [
+    {
+      _id: "c1",
+      name: "Email",
+      linkTo: "mailto:eksternalfour@gmail.com",
+      icon: "/images/icons/bxs-envelope.svg",
+    },
+    {
+      _id: "c2",
+      name: "LinkedIn",
+      linkTo: "https://www.linkedin.com/in/ngrwisnu/",
+      icon: "/images/icons/bxl-linkedin.svg",
+    },
+    {
+      _id: "c3",
+      name: "Github",
+      linkTo: "https://github.com/ngrwisnu?tab=repositories",
+      icon: "/images/icons/bxl-github.svg",
+    },
+  ],
   descriptions: [
     {
       _id: "p1",

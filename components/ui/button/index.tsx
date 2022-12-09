@@ -4,12 +4,24 @@ interface ButtonProps {
   isSubmit?: boolean;
   isDefault?: boolean;
   isDisabled?: boolean;
-  link: string;
+  link?: string | any;
   children: any;
 }
 
 const Button = (props: ButtonProps) => {
-  const { isSubmit, link } = props;
+  const { isSubmit, link, isDefault, isDisabled } = props;
+
+  const className = [
+    "py-2",
+    "px-4",
+    "font-medium",
+    "capitalize",
+    "btn",
+    "rounded-sm",
+  ];
+
+  isDefault && className.push("btn-outline");
+  isDisabled && className.push("btn-disabled text-stone-500");
 
   if (!isSubmit) {
     return (
@@ -19,7 +31,7 @@ const Button = (props: ButtonProps) => {
     );
   }
 
-  return <button className="btn-outline btn">{props.children}</button>;
+  return <button className={`${className.join(" ")}`}>{props.children}</button>;
 };
 
 export default Button;
