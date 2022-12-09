@@ -35,7 +35,7 @@ const data = {
       body: "In 2021, I started taking online courses to learn the basics of web programming with HTML, CSS, and JavaScript. Since then, I have been continuing to learn front-end web development.",
     },
   ],
-  skills: ["Web design", "Frontend development", "UI/UX"],
+  skills: ["Web Design", "Frontend Development", "UI/UX"],
   technologies: [
     "JavaScript",
     "ReactJS",

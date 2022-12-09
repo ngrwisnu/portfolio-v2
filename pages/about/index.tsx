@@ -18,7 +18,7 @@ const AboutPage = () => {
           className="flex flex-col gap-5 md:col-span-4 md:justify-self-center"
           id="left-content"
         >
-          <div className="about__photo relative h-32 w-32 overflow-hidden rounded-full border border-blue-400">
+          <div className="about__photo relative h-32 w-32 overflow-hidden rounded-3xl">
             <Image
               src="/images/black&white.jpg"
               alt="profile picture"
