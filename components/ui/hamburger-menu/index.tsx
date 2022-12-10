@@ -1,7 +1,23 @@
-const HamburgerMenu = () => {
+import { FunctionDeclaration } from "typescript";
+
+const HamburgerMenu = (props: any) => {
+  const className = [
+    "swap-rotate",
+    "swap",
+    "btn-square",
+    "rounded-sm",
+    "btn",
+    "z-20",
+  ];
+  className.push(props.newClass);
+
+  //   const menuHandler = (e: any) => {
+  //     props.hamburgerHandler(e.target.checked);
+  //   };
+
   return (
-    <label className="swap swap-rotate btn-circle btn">
-      <input type="checkbox" />
+    <label className={className.join(" ")}>
+      <input type="checkbox" onClick={props.hamburgerHandler} />
 
       <svg
         className="swap-off fill-current"

@@ -72,7 +72,7 @@ const AboutPage = () => {
             className="flex flex-col gap-14 pt-14 md:col-span-8 md:pt-0"
             id="right-content"
           >
-            <div className="about__description flex flex-col gap-3">
+            <div className="about__description flex max-w-[600px] flex-col gap-3">
               {data.descriptions.map((content: { [key: string]: string }) => (
                 <p key={content._id}>{content.body}</p>
               ))}
