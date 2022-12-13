@@ -1,5 +1,3 @@
-import { FunctionDeclaration } from "typescript";
-
 const HamburgerMenu = (props: any) => {
   const className = [
     "swap-rotate",
@@ -10,10 +8,6 @@ const HamburgerMenu = (props: any) => {
     "z-20",
   ];
   className.push(props.newClass);
-
-  //   const menuHandler = (e: any) => {
-  //     props.hamburgerHandler(e.target.checked);
-  //   };
 
   return (
     <label className={className.join(" ")}>

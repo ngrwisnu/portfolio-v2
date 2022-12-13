@@ -1,23 +1,22 @@
 import Image from "next/image";
-import Link from "next/link";
 import Button from "../ui/button";
 
 const EmptyPage = () => {
   return (
-    <div className="w-screen h-screen md:max-h-[832px] flex flex-col justify-start items-center text-center ">
-      <div className="w-full h-[400px] relative flex row-center">
+    <div className="flex h-screen w-screen flex-col items-center justify-start text-center md:max-h-[832px] ">
+      <div className="row-center relative flex h-[400px] w-full">
         <Image
-          src="/images/404.png"
+          src="/assets/images/empty-page.png"
           alt="Illustration"
           width={500}
           height={400}
         />
       </div>
       <div className="mb-8">
-        <h2 className="text-4xl text-neutral-800 font-medium">
+        <h2 className="text-neutral-800 text-4xl font-medium">
           This page is under construction
         </h2>
-        <p className="text-neutral-400 font-normal mt-4">
+        <p className="text-neutral-400 mt-4 font-normal">
           You could meet the designer, he is on his page right now
         </p>
       </div>

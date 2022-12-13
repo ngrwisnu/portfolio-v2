@@ -4,8 +4,9 @@ interface ButtonProps {
   isSubmit?: boolean;
   isDefault?: boolean;
   isDisabled?: boolean;
+  isDownload?: boolean;
   link?: string | any;
-  children: any;
+  children: React.ReactNode;
 }
 
 const Button = (props: ButtonProps) => {
@@ -18,14 +19,19 @@ const Button = (props: ButtonProps) => {
     "capitalize",
     "btn",
     "rounded-sm",
+    "group",
   ];
 
-  isDefault && className.push("btn-outline");
+  isDefault && className.push("btn-outline no-underline");
   isDisabled && className.push("btn-disabled text-stone-500");
 
   if (!isSubmit) {
     return (
-      <Link href={link} className="btn-link btn">
+      <Link
+        href={link}
+        className={`btn-link btn hover:no-underline ${className.join(" ")}`}
+        download={props.isDownload}
+      >
         {props.children}
       </Link>
     );

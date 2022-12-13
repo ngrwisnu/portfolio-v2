@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Fragment } from "react";
-import Header from "../../components/header";
 import Button from "../../components/ui/button";
+import DownloadIcon from "../../components/ui/icons/download";
 import data from "../../data/about";
 
 interface Contact {
@@ -14,7 +14,6 @@ interface Contact {
 const AboutPage = () => {
   return (
     <Fragment>
-      <Header />
       <section className="w-screen px-4 pt-20 md:px-0">
         <div className="container-content about grid grid-rows-content md:grid-cols-12">
           {/* Left/Top content */}
@@ -24,7 +23,7 @@ const AboutPage = () => {
           >
             <div className="about__photo relative h-32 w-32 overflow-hidden rounded-3xl">
               <Image
-                src="/images/black&white.jpg"
+                src="/assets/images/black&white.jpg"
                 alt="profile picture"
                 width={350}
                 height={400}
@@ -36,9 +35,9 @@ const AboutPage = () => {
               <h6>{data.label}</h6>
             </div>
             <div className="about__button-icons">
-              <Button isSubmit isDisabled>
+              <Button link="/assets/docs/ngr-s-resume.pdf" isDefault isDownload>
                 <Image
-                  src="/images/icons/download.svg"
+                  src="/assets/images/icons/download.svg"
                   alt=""
                   width={24}
                   height={24}

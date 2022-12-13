@@ -9,12 +9,6 @@ const Header = () => {
     setIsChecked(!isChecked);
   };
 
-  if (isChecked === false) {
-    console.log("menu is hidden");
-  } else {
-    console.log("menu is opened");
-  }
-
   return (
     <div className="w-screen bg-stone-800">
       <div className="container-content relative md:px-0">
