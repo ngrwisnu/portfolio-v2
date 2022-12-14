@@ -17,7 +17,7 @@ const EmptyPage = () => {
           This page is under construction
         </h2>
         <p className="text-neutral-400 mt-4 font-normal">
-          You could meet the designer, he is on his page right now
+          Meet the designer, he is on his page right now
         </p>
       </div>
       <Button link="/about">Meet the designer</Button>
