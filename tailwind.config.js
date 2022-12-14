@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        content: "auto",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
