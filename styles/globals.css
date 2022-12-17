@@ -21,6 +21,10 @@ a {
 }
 
 @layer components {
+  .font-logo {
+    font-family: "Josefin Sans";
+  }
+
   .col-center {
     @apply flex-col items-center justify-center;
   }

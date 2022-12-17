@@ -1,4 +1,21 @@
-const data = {
+type AboutDataType = {
+  name: string;
+  label: string;
+  contacts: {
+    _id: string;
+    name: string;
+    linkTo: string;
+    icon: string;
+  }[];
+  descriptions: {
+    _id: string;
+    body: string;
+  }[];
+  skills: string[];
+  technologies: string[];
+};
+
+const data: AboutDataType = {
   name: "Ngr Wisnu",
   label: "Front-end Developer",
   contacts: [
