@@ -20,6 +20,12 @@ a {
   box-sizing: border-box;
 }
 
+@layer base {
+  h2 {
+    @apply text-[32px];
+  }
+}
+
 @layer components {
   .font-logo {
     font-family: "Josefin Sans";
@@ -39,5 +45,13 @@ a {
 
   .skills-title {
     @apply mb-4 text-base font-semibold;
+  }
+
+  .bg-topstore-gradient {
+    background: linear-gradient(
+      63.82deg,
+      #dbdbf4 10.51%,
+      rgba(249, 250, 255, 0.1) 114.24%
+    );
   }
 }

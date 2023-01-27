@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Contact from "../components/contact/Contact";
 import EmptyPage from "../components/empty-page";
+import Hero from "../components/hero";
+import SelectedWorks from "../components/selected-works";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Hero />
+      <SelectedWorks />
       <EmptyPage />
       <Contact />
     </div>
