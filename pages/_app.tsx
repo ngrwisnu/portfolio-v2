@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="freelance, web designer, developer, frontend developer, ui designer, react developer, next developer"
         />
       </Head>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </Layout>
   );
 }

@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Contact from "../components/contact/Contact";
-import EmptyPage from "../components/empty-page";
 import Hero from "../components/hero";
 import SelectedWorks from "../components/selected-works";
+import Technologies from "../components/technologies";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <Hero />
       <SelectedWorks />
-      <EmptyPage />
+      <Technologies />
       <Contact />
     </div>
   );

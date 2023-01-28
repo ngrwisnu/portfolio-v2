@@ -25,7 +25,7 @@ const Header = () => {
             >
               <ul className="flex h-full w-full flex-col items-center justify-center gap-8 bg-stone-800 text-3xl font-light md:flex-row md:justify-start md:bg-transparent md:text-base md:font-normal">
                 <li>
-                  <Link href="/">Works</Link>
+                  <Link href="/works">Works</Link>
                 </li>
                 <li>
                   <Link href="/about">About</Link>
