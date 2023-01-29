@@ -7,6 +7,7 @@ export interface WorksType {
   technologies: string[];
   isSelected: boolean;
   gradient?: string;
+  linkExternal?: string;
 }
 
 const data: WorksType[] = [
@@ -16,9 +17,10 @@ const data: WorksType[] = [
     title: "Twice Album Page",
     description:
       "This project was one of required projects from freeCodeCamp to complete Responsive Web Design certification.",
-    imgUrls: ["luxspace-preview.png"],
+    imgUrls: ["twice-preview.jpg"],
     technologies: ["HTML", "CSS"],
     isSelected: false,
+    linkExternal: "https://ngrwisnu.github.io/landing-page-fcc/",
   },
   {
     id: 102,
@@ -26,9 +28,10 @@ const data: WorksType[] = [
     title: "IDCamp 2022",
     description:
       "Web page project where we need to implement some criteria like semantic elements, CSS styling and layouting.",
-    imgUrls: ["luxspace-preview.png"],
+    imgUrls: ["idcamp-preview.jpg"],
     technologies: ["HTML", "CSS", "JavaScript"],
     isSelected: false,
+    linkExternal: "https://ngrwisnu.github.io/idcamp22-review/",
   },
   {
     id: 11,

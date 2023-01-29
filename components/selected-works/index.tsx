@@ -16,6 +16,7 @@ const SelectedWorks = () => {
                   description={work.description}
                   imgUrl={work.imgUrls[0]}
                   gradient={work.gradient}
+                  slug={work.slug}
                 />
               );
             }

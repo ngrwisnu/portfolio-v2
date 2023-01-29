@@ -1,17 +1,27 @@
 import React from "react";
 import Contact from "../../components/contact/Contact";
-import EmptyPage from "../../components/empty-page";
 import ProjectCard from "../../components/project-card";
+import data from "../../data/works";
 
 const Works = () => {
   return (
     <section id="works-page" className="w-screen">
-      <div className="container-content flex flex-wrap py-24 max-lg:px-4">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+      <div className="container-content py-24 max-lg:px-4">
+        <ul className="flex flex-wrap max-sm:gap-4">
+          {data.map((work) => {
+            if (work.isSelected === false) {
+              return (
+                <ProjectCard
+                  key={work.slug}
+                  title={work.title}
+                  description={work.description}
+                  linkTo={work.linkExternal}
+                  imgUrl={work.imgUrls[0]}
+                />
+              );
+            }
+          })}
+        </ul>
       </div>
       <Contact />
     </section>

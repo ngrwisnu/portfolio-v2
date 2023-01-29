@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { WorksType } from "../../data/works";
 
@@ -7,10 +8,11 @@ interface SelectedWorkType {
   description: string;
   imgUrl: string;
   gradient?: string;
+  slug: string;
 }
 
 const SelectedWork = (props: SelectedWorkType) => {
-  const { title, description, imgUrl, gradient } = props;
+  const { title, description, imgUrl, gradient, slug } = props;
 
   const bgGradient = {
     background: gradient,
@@ -18,7 +20,7 @@ const SelectedWork = (props: SelectedWorkType) => {
 
   return (
     <div className="work-content max-md:mx-4">
-      <div className="work-content__header flex flex-col md:flex-row">
+      <div className="work-content__header mb-6 flex flex-col md:flex-row">
         <h2 className="justify-self-start pr-0 max-md:pb-2 md:self-center md:pr-3">
           {title}
         </h2>
@@ -27,17 +29,19 @@ const SelectedWork = (props: SelectedWorkType) => {
           {description}
         </p>
       </div>
-      <div
-        style={bgGradient}
-        className="work-content__image mt-6 flex max-h-[656px] w-full justify-end"
-      >
-        <Image
-          src={`/assets/images/${imgUrl}`}
-          width={1050}
-          height={706}
-          alt="Preview"
-        />
-      </div>
+      <Link href={`/works/${slug}`}>
+        <div
+          style={bgGradient}
+          className="work-content__image flex max-h-[656px] w-full justify-end"
+        >
+          <Image
+            src={`/assets/images/${imgUrl}`}
+            width={1050}
+            height={706}
+            alt="Preview"
+          />
+        </div>
+      </Link>
     </div>
   );
 };
