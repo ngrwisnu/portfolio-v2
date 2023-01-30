@@ -14,7 +14,7 @@ const Contact = () => {
               whether you want to ask something or just want to say hello.
             </p>
           </div>
-          <Button isSubmit>Send Email</Button>
+          <Button>Send Email</Button>
           <SosmedLink />
         </div>
       </div>

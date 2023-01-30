@@ -1,16 +1,26 @@
 import Link from "next/link";
 
 interface ButtonProps {
-  isSubmit?: boolean;
-  isDefault?: boolean;
+  isExternal?: boolean;
+  isPrimary?: boolean;
+  isSecondary?: boolean;
   isDisabled?: boolean;
   isDownload?: boolean;
-  link?: string | any;
+  isOutlined?: boolean;
+  link?: string;
   children: React.ReactNode;
 }
 
 const Button = (props: ButtonProps) => {
-  const { isSubmit, link, isDefault, isDisabled } = props;
+  const {
+    isExternal,
+    link,
+    isSecondary,
+    isDisabled,
+    isOutlined,
+    isDownload,
+    isPrimary,
+  } = props;
 
   const className = [
     "py-2",
@@ -22,15 +32,44 @@ const Button = (props: ButtonProps) => {
     "group",
   ];
 
-  isDefault && className.push("btn-outline no-underline");
+  // Default button
+  isPrimary && className.push("bg-neutral-800 text-white");
+  isSecondary && className.push("bg-white text-neutral-800");
+
+  // Outline button
+  if (isOutlined) {
+    if (isPrimary)
+      className.push(
+        "bg-transparent border border-neutral-800 text-neutral-800"
+      );
+    if (isSecondary)
+      className.push("bg-transparent border border-white text-white");
+  }
+
+  // disabled button
   isDisabled && className.push("btn-disabled text-stone-500");
 
-  if (!isSubmit) {
+  // External button
+  if (isExternal) {
+    if (isOutlined) {
+      return (
+        <Link
+          href={link!}
+          className={`hover:no-underline ${className.join(" ")}`}
+          download={isDownload}
+        >
+          {props.children}
+        </Link>
+      );
+    }
+
     return (
       <Link
-        href={link}
-        className={`btn-link btn hover:no-underline ${className.join(" ")}`}
-        download={props.isDownload}
+        href={link!}
+        className={`text-neutral-800 btn-link bg-transparent hover:no-underline ${className.join(
+          " "
+        )}`}
+        download={isDownload}
       >
         {props.children}
       </Link>

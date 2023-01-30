@@ -42,7 +42,12 @@ const AboutPage = () => {
               <h6>{data.label}</h6>
             </div>
             <div className="about__button-icons">
-              <Button link="/assets/docs/ngr-s-resume.pdf" isDefault isDownload>
+              <Button
+                link="/assets/docs/ngr-s-resume.pdf"
+                isExternal
+                isOutlined
+                isDownload
+              >
                 <Image
                   src="/assets/images/icons/download.svg"
                   alt=""
