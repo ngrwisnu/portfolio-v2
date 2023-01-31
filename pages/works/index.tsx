@@ -1,5 +1,5 @@
 import React from "react";
-import Contact from "../../components/contact/Contact";
+import Footer from "../../components/footer";
 import ProjectCard from "../../components/project-card";
 import data from "../../data/works";
 
@@ -23,7 +23,7 @@ const Works = () => {
           })}
         </ul>
       </div>
-      <Contact />
+      <Footer />
     </section>
   );
 };

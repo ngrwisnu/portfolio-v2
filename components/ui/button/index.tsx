@@ -38,10 +38,7 @@ const Button = (props: ButtonProps) => {
 
   // Outline button
   if (isOutlined) {
-    if (isPrimary)
-      className.push(
-        "bg-transparent border border-neutral-800 text-neutral-800"
-      );
+    if (isPrimary) className.push("bg-transparent border border-neutral-800");
     if (isSecondary)
       className.push("bg-transparent border border-white text-white");
   }

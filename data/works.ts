@@ -8,6 +8,8 @@ export interface WorksType {
   isSelected: boolean;
   gradient?: string;
   linkExternal?: string;
+  designedBy: string;
+  myRole: string;
 }
 
 const data: WorksType[] = [
@@ -21,6 +23,8 @@ const data: WorksType[] = [
     technologies: ["HTML", "CSS"],
     isSelected: false,
     linkExternal: "https://ngrwisnu.github.io/landing-page-fcc/",
+    designedBy: "Ngr Wisnu",
+    myRole: "UI Engineer",
   },
   {
     id: 102,
@@ -32,6 +36,8 @@ const data: WorksType[] = [
     technologies: ["HTML", "CSS", "JavaScript"],
     isSelected: false,
     linkExternal: "https://ngrwisnu.github.io/idcamp22-review/",
+    designedBy: "Ngr Wisnu",
+    myRole: "UI Engineer",
   },
   {
     id: 11,
@@ -39,11 +45,20 @@ const data: WorksType[] = [
     title: "Luxspace",
     description:
       "A website where you can find home furniture, build with react, tailwind, and mock API.",
-    imgUrls: ["luxspace-preview.png"],
+    imgUrls: [
+      "luxspace-preview.png",
+      "luxspace-jumbotron.jpg",
+      "lx-prev1.jpg",
+      "lx-prev2.jpg",
+      "lx-prev3.jpg",
+      "lx-prev4.jpg",
+    ],
     technologies: ["ReactJS", "TypeScript", "Tailwind", "MockAPI"],
     isSelected: true,
     gradient:
       "linear-gradient(63.82deg, #D9D9D9 10.51%, rgba(217, 217, 217, 0) 114.24%)",
+    designedBy: "BuildWithAngga",
+    myRole: "Fullstack Developer",
   },
   {
     id: 12,
@@ -51,11 +66,21 @@ const data: WorksType[] = [
     title: "TopStore",
     description:
       "Building a website where you can top up your game. Build with the MERN tech stack and you could also set up the database’s content from the Back-end server.",
-    imgUrls: ["topstore-preview.png"],
+    imgUrls: [
+      "topstore-preview.png",
+      "topstore-jumbotron.jpg",
+      "ts-prev1.jpg",
+      "ts-prev2.png",
+      "ts-prev3.jpg",
+      "ts-prev4.jpg",
+      "ts-prev5.jpg",
+    ],
     technologies: ["NextJS", "TypeScript", "NodeJS", "ExpressJS", "MongoDB"],
     isSelected: true,
     gradient:
       "linear-gradient(63.82deg,#dbdbf4 10.51%,rgba(249, 250, 255, 0.1) 114.24%)",
+    designedBy: "BuildWithAngga",
+    myRole: "Fullstack Developer",
   },
 ];
 

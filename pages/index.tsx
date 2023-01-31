@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Contact from "../components/contact/Contact";
+import Footer from "../components/footer";
 import Hero from "../components/hero";
 import SelectedWorks from "../components/selected-works";
 import Technologies from "../components/technologies";
@@ -18,7 +18,7 @@ export default function Home() {
       <Hero />
       <SelectedWorks />
       <Technologies />
-      <Contact />
+      <Footer />
     </div>
   );
 }
