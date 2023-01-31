@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Fragment } from "react";
-import Button from "../../components/ui/button";
+import EmptyPage from "../../components/empty-page";
+import { ButtonLink } from "../../components/ui/button";
 import data from "../../data/about";
 
 interface Contact {
@@ -42,21 +43,13 @@ const AboutPage = () => {
               <h6>{data.label}</h6>
             </div>
             <div className="about__button-icons">
-              <Button
+              <ButtonLink
                 link="/assets/docs/ngr-s-resume.pdf"
-                isExternal
-                isOutlined
+                newClassName="btn-outline"
                 isDownload
               >
-                <Image
-                  src="/assets/images/icons/download.svg"
-                  alt=""
-                  width={24}
-                  height={24}
-                  className="mr-1 h-[18px] w-[18px]"
-                />
                 Resume
-              </Button>
+              </ButtonLink>
               <ul className="mt-3 flex gap-3 ">
                 {data.contacts.map((contact: Contact) => (
                   <li
@@ -110,6 +103,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+        <EmptyPage />
       </section>
     </Fragment>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import SosmedLink from "../sosmed-link";
-import Button from "../ui/button";
+import { ButtonLink } from "../ui/button";
 
 const Contact = () => {
   return (
@@ -12,7 +12,7 @@ const Contact = () => {
           whether you want to ask something or just want to say hello.
         </p>
       </div>
-      <Button>Send Email</Button>
+      <ButtonLink link="/">Send Email</ButtonLink>
       <SosmedLink />
     </div>
   );

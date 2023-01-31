@@ -2,12 +2,16 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 import Footer from "../../../components/footer";
-import Button from "../../../components/ui/button";
+import { ButtonLink } from "../../../components/ui/button";
 import data from "../../../data/works";
 
 const ProjectDetail = () => {
   const router = useRouter();
   const { slug } = router.query;
+
+  function clickHandler() {
+    alert("Not Found");
+  }
 
   return (
     <section id="project-detail" className="w-screen max-md:px-4">
@@ -19,7 +23,13 @@ const ProjectDetail = () => {
                 {/* Hero section */}
                 <div className="flex flex-col items-center gap-12">
                   <h2>{item.title}</h2>
-                  <button className="btn-outline btn">Visit Site</button>
+                  <ButtonLink
+                    link="#"
+                    clickHandler={clickHandler}
+                    newClassName="btn-outline"
+                  >
+                    Visit Site
+                  </ButtonLink>
                   <figure className="flex max-h-[620px] w-full justify-center bg-[#F5F5F5]">
                     <Image
                       src={`/assets/images/${item.imgUrls[1]}`}

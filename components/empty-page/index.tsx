@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../ui/button";
+import { ButtonLink } from "../ui/button";
 
 const EmptyPage = () => {
   return (
@@ -20,7 +20,9 @@ const EmptyPage = () => {
           You could meet the designer, he is on his page right now
         </p>
       </div>
-      <Button link="/about">Meet the designer</Button>
+      <ButtonLink link="/about" newClassName="btn-link hover:no-underline">
+        Meet the designer
+      </ButtonLink>
     </div>
   );
 };
