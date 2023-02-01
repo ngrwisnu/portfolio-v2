@@ -5,6 +5,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Contact from "./Contact";
+import { ButtonLink } from "../ui/button";
 
 describe("Contact section", () => {
   test("renders title for contact section", () => {
@@ -26,11 +27,23 @@ describe("Contact section", () => {
   });
 
   test("renders email button in contact section", () => {
-    render(<Contact />);
+    render(
+      <ButtonLink
+        link="mailto:adiprayogongrwisnu@gmail.com"
+        newClassName="btn-outline"
+      >
+        Send email
+      </ButtonLink>
+    );
 
-    const emailButton = screen.getByRole("button");
+    const emailButton = screen.getByRole("link");
 
     expect(emailButton).toBeInTheDocument();
+    expect(emailButton).toHaveAttribute(
+      "href",
+      "mailto:adiprayogongrwisnu@gmail.com"
+    );
+    expect(emailButton).toHaveClass("btn btn-outline");
   });
 });
 

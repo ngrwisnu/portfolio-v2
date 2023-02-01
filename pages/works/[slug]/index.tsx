@@ -4,13 +4,24 @@ import React from "react";
 import Footer from "../../../components/footer";
 import { ButtonLink } from "../../../components/ui/button";
 import data from "../../../data/works";
+import Swal from "sweetalert2";
 
 const ProjectDetail = () => {
   const router = useRouter();
   const { slug } = router.query;
 
   function clickHandler() {
-    alert("Not Found");
+    Swal.fire({
+      imageUrl: "/assets/images/empty-page.png",
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: "Illustration",
+      title: "Page Not Found",
+      text: "This page is under construction",
+      footer: '<a href="/works">Want to see other works?</a>',
+      confirmButtonText: "Close",
+      confirmButtonColor: "#262626",
+    });
   }
 
   return (
@@ -24,9 +35,9 @@ const ProjectDetail = () => {
                 <div className="flex flex-col items-center gap-12">
                   <h2>{item.title}</h2>
                   <ButtonLink
-                    link="#"
+                    link=""
                     clickHandler={clickHandler}
-                    newClassName="btn-outline"
+                    newClassName="btn-outline text-sm"
                   >
                     Visit Site
                   </ButtonLink>

@@ -30,10 +30,9 @@ export const ButtonLink = (props: ButtonProps) => {
     <Link
       href={props.link!}
       download={props.isDownload}
-      className={[
-        "btn rounded py-2 px-5 font-medium not-italic",
-        props.newClassName,
-      ].join(" ")}
+      className={["btn rounded py-2 px-5 font-medium", props.newClassName].join(
+        " "
+      )}
       onClick={props.clickHandler}
     >
       {props.children}

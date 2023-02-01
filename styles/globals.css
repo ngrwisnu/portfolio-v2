@@ -47,4 +47,12 @@ a {
   .skills-title {
     @apply mb-4 text-base font-semibold;
   }
+
+  .before-el {
+    @apply absolute -left-16 -top-16 h-[112px] w-[112px] bg-[#00FFDD] blur-3xl;
+  }
+
+  .after-el {
+    @apply absolute -right-16 -bottom-16 h-[112px] w-[112px] bg-[#00FFDD] blur-3xl;
+  }
 }

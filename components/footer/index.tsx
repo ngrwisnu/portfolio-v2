@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="container-content flex flex-col items-center">
-        <address className="pt-24 pb-12">
+        <address className="pt-24 pb-12 not-italic">
           <Contact />
         </address>
         <small>Copyright &copy; 2023.</small>

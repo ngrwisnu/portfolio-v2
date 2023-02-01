@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className="w-screen bg-stone-800">
       <div className="container-content relative md:px-0">
-        <div className="flex items-center justify-between py-5 px-4  text-stone-50">
+        <header className="flex items-center justify-between py-5 px-4  text-stone-50">
           <Link href="/" className="font-logo z-20 text-3xl font-extralight">
             NGR
           </Link>
@@ -40,7 +40,7 @@ const Header = () => {
               newClass="md:hidden"
             />
           </div>
-        </div>
+        </header>
       </div>
     </div>
   );

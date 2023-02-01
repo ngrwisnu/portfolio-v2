@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Fragment } from "react";
-import EmptyPage from "../../components/empty-page";
 import { ButtonLink } from "../../components/ui/button";
 import data from "../../data/about";
 
@@ -22,7 +21,7 @@ const AboutPage = () => {
           content="Ngr's about page where you can see Ngr's education and his short story about how he jumps into web development"
         />
       </Head>
-      <section className="w-screen px-4 pt-20 md:px-0">
+      <section className="w-screen px-4 py-24 pt-20 md:px-0">
         <div className="container-content about grid grid-rows-content md:grid-cols-12">
           {/* Left/Top content */}
           <div
@@ -103,7 +102,6 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <EmptyPage />
       </section>
     </Fragment>
   );
