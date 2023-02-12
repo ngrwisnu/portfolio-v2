@@ -14,7 +14,7 @@ const Contact = () => {
       </div>
       <ButtonLink
         link="mailto:adiprayogongrwisnu@gmail.com"
-        newClassName="btn-outline text-white border-white"
+        newClassName="btn-outline text-white border-white capitalize"
       >
         Send Email
       </ButtonLink>

@@ -35,9 +35,10 @@ const ProjectDetail = () => {
                 <div className="flex flex-col items-center gap-12">
                   <h2>{item.title}</h2>
                   <ButtonLink
-                    link=""
-                    clickHandler={clickHandler}
-                    newClassName="btn-outline text-sm"
+                    link={item.linkExternal}
+                    // @ts-ignore
+                    clickHandler={slug === "topstore" && clickHandler}
+                    newClassName="btn-outline text-sm capitalize"
                   >
                     Visit Site
                   </ButtonLink>

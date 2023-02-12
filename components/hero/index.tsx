@@ -4,7 +4,7 @@ import SosmedLink from "../sosmed-link";
 const Hero = () => {
   return (
     <section id="hero" className="w-screen">
-      <div className="container-content px-4 py-44 md:px-0">
+      <div className="container-content min-h-screen px-4 py-44 md:px-0">
         <h1 className="text-3xl font-medium leading-[1.125] md:text-7xl">
           Transforming <span className="font-light italic">UI/UX</span> <br />
           <span className="pl-[2px] md:pl-2">Design</span> <br />
@@ -33,7 +33,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="author-info__social hidden basis-1/3 justify-center md:flex">
-            <SosmedLink />
+            <SosmedLink bgTheme="light" />
           </div>
         </div>
       </div>

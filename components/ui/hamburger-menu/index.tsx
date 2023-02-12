@@ -1,4 +1,10 @@
-const HamburgerMenu = (props: any) => {
+interface HamburgerMenuType {
+  hamburgerHandler: (e: any) => void;
+  newClass: string;
+  isChecked: boolean;
+}
+
+const HamburgerMenu = (props: HamburgerMenuType) => {
   const className = [
     "swap-rotate",
     "swap",
@@ -11,7 +17,11 @@ const HamburgerMenu = (props: any) => {
 
   return (
     <label className={className.join(" ")}>
-      <input type="checkbox" onClick={props.hamburgerHandler} />
+      <input
+        type="checkbox"
+        onChange={props.hamburgerHandler}
+        checked={props.isChecked}
+      />
 
       <svg
         className="swap-off fill-current"

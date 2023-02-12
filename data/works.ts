@@ -7,7 +7,7 @@ export interface WorksType {
   technologies: string[];
   isSelected: boolean;
   gradient?: string;
-  linkExternal?: string;
+  linkExternal: string;
   designedBy: string;
   myRole: string;
 }
@@ -41,13 +41,13 @@ const data: WorksType[] = [
   },
   {
     id: 11,
-    slug: "luxspace",
-    title: "Luxspace",
+    slug: "luxerior",
+    title: "Luxerior",
     description:
       "A website where you can find home furniture, build with react, tailwind, and mock API.",
     imgUrls: [
-      "luxspace-preview.png",
-      "luxspace-jumbotron.jpg",
+      "luxerior-preview.png",
+      "luxerior-jumbotron.jpg",
       "lx-prev1.jpg",
       "lx-prev2.jpg",
       "lx-prev3.jpg",
@@ -55,6 +55,7 @@ const data: WorksType[] = [
     ],
     technologies: ["ReactJS", "TypeScript", "Tailwind", "MockAPI"],
     isSelected: true,
+    linkExternal: "https://luxerior.netlify.app/",
     gradient:
       "linear-gradient(63.82deg, #D9D9D9 10.51%, rgba(217, 217, 217, 0) 114.24%)",
     designedBy: "BuildWithAngga",
@@ -77,6 +78,7 @@ const data: WorksType[] = [
     ],
     technologies: ["NextJS", "TypeScript", "NodeJS", "ExpressJS", "MongoDB"],
     isSelected: true,
+    linkExternal: "#",
     gradient:
       "linear-gradient(63.82deg,#dbdbf4 10.51%,rgba(249, 250, 255, 0.1) 114.24%)",
     designedBy: "BuildWithAngga",

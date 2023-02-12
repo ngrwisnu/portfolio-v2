@@ -5,7 +5,7 @@ import data from "../../data/works";
 const SelectedWorks = () => {
   return (
     <section id="selected-works" className="w-screen">
-      <div className="container-content flex flex-col gap-24 py-24">
+      <div className="container-content flex flex-col gap-24 border-y border-stone-500/75 py-24">
         {data
           .map((work) => {
             if (work.isSelected === true) {

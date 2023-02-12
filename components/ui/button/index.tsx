@@ -7,7 +7,8 @@ interface ButtonProps {
   isSecondary?: boolean;
   newClassName?: string;
   clickHandler?: () => void;
-  link?: string;
+  link: string;
+  tooltipName?: string;
   children: React.ReactNode;
 }
 
@@ -33,6 +34,7 @@ export const ButtonLink = (props: ButtonProps) => {
       className={["btn rounded py-2 px-5 font-medium", props.newClassName].join(
         " "
       )}
+      data-tip={props.tooltipName}
       onClick={props.clickHandler}
     >
       {props.children}

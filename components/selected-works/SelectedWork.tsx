@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { WorksType } from "../../data/works";
 
 interface SelectedWorkType {
   title: string;
@@ -32,7 +31,7 @@ const SelectedWork = (props: SelectedWorkType) => {
       <Link href={`/works/${slug}`}>
         <div
           style={bgGradient}
-          className="work-content__image flex max-h-[656px] w-full justify-end"
+          className="work-content__image flex max-h-[656px] w-auto justify-end"
         >
           <Image
             src={`/assets/images/${imgUrl}`}

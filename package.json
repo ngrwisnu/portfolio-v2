@@ -16,6 +16,7 @@
     "daisyui": "^2.42.1",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "html-react-parser": "^3.0.8",
     "jest-environment-jsdom": "^29.4.0",
     "next": "13.0.6",
     "react": "18.2.0",
