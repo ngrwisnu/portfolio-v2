@@ -3,7 +3,7 @@ import SosmedLink from "../sosmed-link";
 
 const Hero = () => {
   return (
-    <section id="hero" className="w-screen">
+    <section id="hero" className="w-screen dark:text-white">
       <div className="container-content min-h-screen px-4 py-44 md:px-0">
         <h1 className="text-3xl font-medium leading-[1.125] md:text-7xl">
           Transforming <span className="font-light italic">UI/UX</span> <br />

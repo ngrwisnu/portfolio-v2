@@ -25,7 +25,10 @@ const ProjectDetail = () => {
   }
 
   return (
-    <section id="project-detail" className="w-screen max-md:px-4">
+    <section
+      id="project-detail"
+      className="w-screen dark:text-white max-md:px-4"
+    >
       <div className="container-content py-24">
         {data.map((item) => {
           if (item.slug === slug) {
@@ -58,20 +61,20 @@ const ProjectDetail = () => {
                     <h5>
                       <strong>Description</strong>
                     </h5>
-                    <p>{item.description}</p>
+                    <p className="dark:text-stone-300">{item.description}</p>
                   </div>
                   <div className="detail__more-info flex">
                     <div className="more-info__designed-by basis-1/2 md:basis-1/3">
                       <h5>
                         <strong>Designed By</strong>
                       </h5>
-                      <p>{item.designedBy}</p>
+                      <p className="dark:text-stone-300">{item.designedBy}</p>
                     </div>
                     <div className="more-info__role basis-1/2 md:basis-1/3">
                       <h5>
                         <strong>Role</strong>
                       </h5>
-                      <p>{item.myRole}</p>
+                      <p className="dark:text-stone-300">{item.myRole}</p>
                     </div>
                   </div>
                 </div>

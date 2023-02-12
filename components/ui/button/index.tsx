@@ -16,7 +16,7 @@ export const Button = (props: ButtonProps) => {
   return (
     <button
       className={[
-        "btn rounded py-2 px-5 font-medium not-italic",
+        "btn rounded py-2 px-5 font-medium not-italic dark:text-white",
         props.newClassName,
       ].join(" ")}
       onClick={props.clickHandler}
@@ -31,9 +31,10 @@ export const ButtonLink = (props: ButtonProps) => {
     <Link
       href={props.link!}
       download={props.isDownload}
-      className={["btn rounded py-2 px-5 font-medium", props.newClassName].join(
-        " "
-      )}
+      className={[
+        "btn rounded py-2 px-5 font-medium dark:text-white dark:hover:text-[#1e293b]",
+        props.newClassName,
+      ].join(" ")}
       data-tip={props.tooltipName}
       onClick={props.clickHandler}
     >

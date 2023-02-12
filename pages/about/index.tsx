@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import { ButtonLink } from "../../components/ui/button";
 import data from "../../data/about";
 import parse from "html-react-parser";
+import Footer from "../../components/footer";
 
 interface Contact {
   _id: string;
@@ -22,7 +23,7 @@ const AboutPage = () => {
           content="Ngr's about page where you can see Ngr's education and his short story about how he jumps into web development"
         />
       </Head>
-      <section className="mt-20 w-screen px-4 py-24 pt-20 md:px-0">
+      <section className="mt-20 w-screen px-4 py-24 pt-20 dark:text-white md:px-0">
         <div className="container-content about grid grid-rows-content sm:grid-cols-12">
           {/* Left/Top content */}
           <div
@@ -40,7 +41,9 @@ const AboutPage = () => {
             </div>
             <div className="flex flex-col gap-5 max-sm:basis-1/2">
               <div className="about__name-label text-neutral-500">
-                <h5 className="font-medium text-stone-900">{data.name}</h5>
+                <h5 className="font-medium text-stone-900 dark:text-white">
+                  {data.name}
+                </h5>
                 <h6>{data.label}</h6>
               </div>
               <div className="about__button-icons">
@@ -55,7 +58,7 @@ const AboutPage = () => {
                     height="16"
                     viewBox="0 0 24 24"
                     // style={{ fill: "#1e293b" }}
-                    className="mr-1 fill-[#1e293b] group-hover:fill-[#cbd5e1]"
+                    className="mr-1 fill-[#1e293b] group-hover:fill-[#cbd5e1] dark:fill-white dark:group-hover:fill-[#1e293b]"
                   >
                     <path d="M19 9h-4V3H9v6H5l7 8zM4 19h16v2H4z"></path>
                   </svg>
