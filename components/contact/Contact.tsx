@@ -18,7 +18,7 @@ const Contact = () => {
       >
         Send Email
       </ButtonLink>
-      <SosmedLink />
+      <SosmedLink bgTheme="dark" />
     </div>
   );
 };
