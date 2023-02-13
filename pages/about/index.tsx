@@ -32,7 +32,7 @@ const AboutPage = () => {
           >
             <div className="about__photo relative h-32 w-32 overflow-hidden rounded-3xl">
               <Image
-                src="/assets/images/black&white.jpg"
+                src="/assets/images/cv3.jpg"
                 alt="profile picture"
                 width={350}
                 height={400}
