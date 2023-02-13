@@ -12,7 +12,7 @@ export default function Home() {
         <title>Ngr - Web Developer</title>
         <meta
           name="description"
-          content="Homepage of Ngr's Portfolio website where you can see his past projects"
+          content="Ngr Wisnu is a frontend developer who has UI/UX design and Backend knowledge to support his work. This homepage of Ngr's Portfolio website shows up of his last projects"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
