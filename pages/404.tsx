@@ -1,16 +1,20 @@
-import Link from "next/link";
-import Button from "../components/ui/button";
+import { ButtonLink } from "../components/ui/button";
 
 const NotFoundPage = () => {
   return (
-    <div className="w-screen h-screen flex col-center ">
-      <div className="flex col-center mb-8">
-        <h2 className="text-6xl font-light text-neutral-800 font-['Josefin_Sans']">
+    <div className="col-center flex h-screen w-screen ">
+      <div className="col-center mb-8 flex">
+        <h2 className="text-neutral-800 font-['Josefin_Sans'] text-6xl font-light">
           404
         </h2>
         <p className="text-neutral-400 mt-4">This page is never exist</p>
       </div>
-      <Button link="/">Go to Homepage</Button>
+      <ButtonLink
+        link="/"
+        newClassName="btn-link text-slate-800 hover:no-underline"
+      >
+        Go to Homepage
+      </ButtonLink>
     </div>
   );
 };

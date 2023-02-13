@@ -8,6 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   font-family: Inter, "Josefin Sans", Roboto, sans-serif;
 }
 
@@ -18,6 +19,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@layer base {
+  h2 {
+    @apply text-[32px];
+  }
 }
 
 @layer components {
@@ -39,5 +46,22 @@ a {
 
   .skills-title {
     @apply mb-4 text-base font-semibold;
+  }
+
+  .before-el {
+    @apply absolute -left-16 -top-16 h-[112px] w-[112px] bg-[#00FFDD] blur-3xl;
+  }
+
+  .after-el {
+    @apply absolute -right-16 -bottom-16 h-[112px] w-[112px] bg-[#00FFDD] blur-3xl;
+  }
+
+  .tooltip:before {
+    font-size: 12px !important;
+    text-transform: none !important;
+  }
+
+  .hide-nav {
+    top: -100%;
   }
 }
