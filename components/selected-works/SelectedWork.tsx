@@ -35,8 +35,8 @@ const SelectedWork = (props: SelectedWorkType) => {
         >
           <Image
             src={`/assets/images/${imgUrl}`}
-            width={1050}
-            height={706}
+            width={1080}
+            height={702}
             alt="Preview"
           />
         </div>

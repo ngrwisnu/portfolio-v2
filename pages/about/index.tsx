@@ -57,7 +57,6 @@ const AboutPage = () => {
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    // style={{ fill: "#1e293b" }}
                     className="mr-1 fill-[#1e293b] group-hover:fill-[#cbd5e1] dark:fill-white dark:group-hover:fill-[#1e293b]"
                   >
                     <path d="M19 9h-4V3H9v6H5l7 8zM4 19h16v2H4z"></path>

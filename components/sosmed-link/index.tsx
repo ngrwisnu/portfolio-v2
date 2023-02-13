@@ -9,6 +9,7 @@ const SosmedLink = ({ bgTheme }: SosmedType) => {
   return (
     <div className="flex gap-2 text-sm font-light italic">
       <ButtonLink
+        id="linkedin-button"
         link="https://www.linkedin.com/in/ngrwisnu/"
         newClassName="btn-ghost hover:bg-transparent lg:hover:-translate-y-1 tooltip flex"
         tooltipName="LinkedIn"
@@ -27,6 +28,7 @@ const SosmedLink = ({ bgTheme }: SosmedType) => {
         </svg>
       </ButtonLink>
       <ButtonLink
+        id="github-button"
         link="https://github.com/ngrwisnu"
         newClassName="btn-ghost hover:bg-transparent lg:hover:-translate-y-1 tooltip flex items-center"
         tooltipName="Github"
