@@ -65,7 +65,7 @@ const Header = () => {
                 !isChecked && "max-md:hidden"
               }`}
             >
-              <ul className="flex h-full w-full flex-col items-center justify-center gap-8 bg-stone-800 text-3xl font-light md:flex-row md:justify-start md:bg-transparent md:text-base md:font-normal">
+              <ul className="navlink-wrapper flex h-full w-full flex-col items-center justify-center gap-2 bg-stone-800 text-3xl font-light md:flex-row md:justify-start md:bg-transparent md:text-base md:font-normal">
                 <li>
                   <Link
                     href="/"
@@ -91,6 +91,11 @@ const Header = () => {
                     onClick={navLinkHandler}
                   >
                     About
+                  </Link>
+                </li>
+                <li className={`border-t md:border-l md:border-t-0`}>
+                  <Link href="/about" onClick={navLinkHandler}>
+                    Contact
                   </Link>
                 </li>
               </ul>

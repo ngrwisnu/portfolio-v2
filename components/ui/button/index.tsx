@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 interface ButtonProps {
+  id?: string;
   isExternal?: boolean;
   isDownload?: boolean;
   isDisabled?: boolean;
@@ -29,6 +30,7 @@ export const Button = (props: ButtonProps) => {
 export const ButtonLink = (props: ButtonProps) => {
   return (
     <Link
+      id={props.id}
       href={props.link!}
       download={props.isDownload}
       className={[

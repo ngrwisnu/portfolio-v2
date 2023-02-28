@@ -64,4 +64,8 @@ a {
   .hide-nav {
     top: -100%;
   }
+
+  ul.navlink-wrapper > li {
+    @apply py-1 px-2;
+  }
 }
