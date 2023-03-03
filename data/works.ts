@@ -78,11 +78,11 @@ const data: WorksType[] = [
     ],
     technologies: ["NextJS", "TypeScript", "NodeJS", "ExpressJS", "MongoDB"],
     isSelected: true,
-    linkExternal: "#",
+    linkExternal: "https://topstore.vercel.app/",
     gradient:
       "linear-gradient(63.82deg,#dbdbf4 10.51%,rgba(249, 250, 255, 0.1) 114.24%)",
     designedBy: "BuildWithAngga",
-    myRole: "Fullstack Developer",
+    myRole: "Front-end Developer",
   },
 ];
 

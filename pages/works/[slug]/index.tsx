@@ -49,7 +49,7 @@ const ProjectDetail = () => {
                     <ButtonLink
                       link={item.linkExternal}
                       // @ts-ignore
-                      clickHandler={slug === "topstore" && clickHandler}
+                      clickHandler={item.linkExternal === "#" && clickHandler}
                       newClassName="btn-outline text-sm capitalize"
                     >
                       Visit Site
