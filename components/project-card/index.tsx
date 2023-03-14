@@ -13,7 +13,7 @@ const ProjectCard = (props: ProjectCardType) => {
   const { linkTo, imgUrl, title, description } = props;
   return (
     <li className="card-wrapper group relative max-h-[288px] w-auto min-w-[200px] shrink basis-full overflow-hidden rounded px-2 sm:basis-1/2 lg:mb-4 lg:max-w-[384px] lg:basis-1/3">
-      <Link href={linkTo!}>
+      <Link href={linkTo!} target="_blank">
         <Image
           src={`/assets/images/${imgUrl}`}
           width={384}
