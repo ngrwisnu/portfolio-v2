@@ -40,6 +40,25 @@ const data: WorksType[] = [
     myRole: "UI Engineer",
   },
   {
+    id: 103,
+    slug: "velcation",
+    title: "Velcation",
+    description:
+      "Velcation is a travel website where customers can select their destination, set up the date, and complete the checkout form",
+    imgUrls: [
+      "velcation-preview.jpg",
+      "velcation-jumbotron.jpg",
+      "vl-1.jpg",
+      "vl-2.jpg",
+      "vl-3.jpg",
+    ],
+    technologies: ["ReactJS", "Bootstrap"],
+    isSelected: false,
+    linkExternal: "https://velcation.netlify.app/",
+    designedBy: "Ngr Wisnu",
+    myRole: "Front-end Developer",
+  },
+  {
     id: 11,
     slug: "luxerior",
     title: "Luxerior",

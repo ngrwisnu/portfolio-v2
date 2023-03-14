@@ -32,9 +32,6 @@ const Hero = () => {
               </h6>
             </div>
           </div>
-          <div className="author-info__social hidden basis-1/3 justify-center md:flex">
-            <SosmedLink bgTheme="light" />
-          </div>
         </div>
       </div>
     </section>
