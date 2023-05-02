@@ -48,7 +48,7 @@ const AboutPage = () => {
               </div>
               <div className="about__button-icons">
                 <ButtonLink
-                  link="/assets/docs/ngr-s-resume.pdf"
+                  link="https://drive.google.com/file/d/1x845s17xTThwjBP46SgCzYvKLEDBVrp8/view?usp=sharing"
                   newClassName="btn-outline group normal-case hover:text-[#cbd5e1] w-full"
                   isDownload
                 >
