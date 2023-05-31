@@ -65,25 +65,50 @@ const ProjectDetail = () => {
                   </div>
 
                   {/* Description */}
-                  <div className="w-full lg:w-1/2">
-                    <div className="detail__description mb-8">
-                      <h5>
-                        <strong>Description</strong>
-                      </h5>
-                      <p className="dark:text-stone-300">{item.description}</p>
-                    </div>
-                    <div className="detail__more-info flex">
-                      <div className="more-info__designed-by basis-1/2 md:basis-1/3">
+                  <div className="flex w-full flex-wrap gap-8 md:gap-0">
+                    <div className="basis-full md:basis-2/3">
+                      <div className="detail__description mb-8">
                         <h5>
-                          <strong>Designed By</strong>
+                          <strong>Description</strong>
                         </h5>
-                        <p className="dark:text-stone-300">{item.designedBy}</p>
+                        <p className="mt-1 dark:text-stone-300 md:w-2/3">
+                          {item.description}
+                        </p>
                       </div>
-                      <div className="more-info__role basis-1/2 md:basis-1/3">
-                        <h5>
-                          <strong>Role</strong>
-                        </h5>
-                        <p className="dark:text-stone-300">{item.myRole}</p>
+                      <div className="detail__more-info flex">
+                        <div className="more-info__designed-by basis-1/2 md:basis-1/3">
+                          <h5>
+                            <strong>Designed By</strong>
+                          </h5>
+                          <p className="mt-1 dark:text-stone-300">
+                            {item.designedBy}
+                          </p>
+                        </div>
+                        <div className="more-info__role basis-1/2 md:basis-1/3">
+                          <h5>
+                            <strong>Role</strong>
+                          </h5>
+                          <p className="mt-1 dark:text-stone-300">
+                            {item.myRole}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="basis-full md:basis-1/3">
+                      <h5>
+                        <strong>Build with ....</strong>
+                      </h5>
+                      <div className="mt-1 flex w-full flex-wrap gap-1">
+                        {item.technologies.map((tech: string) => {
+                          return (
+                            <div
+                              className="badge-outline badge badge-lg"
+                              key={tech}
+                            >
+                              {tech}
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>
