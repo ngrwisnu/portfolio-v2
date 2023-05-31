@@ -72,7 +72,7 @@ const data: WorksType[] = [
       "lx-prev3.jpg",
       "lx-prev4.jpg",
     ],
-    technologies: ["ReactJS", "TypeScript", "Tailwind", "MockAPI"],
+    technologies: ["React", "TypeScript", "Tailwind", "MockAPI"],
     isSelected: true,
     linkExternal: "https://luxerior.netlify.app/",
     gradient:
@@ -95,7 +95,15 @@ const data: WorksType[] = [
       "ts-prev4.jpg",
       "ts-prev5.jpg",
     ],
-    technologies: ["NextJS", "TypeScript", "NodeJS", "ExpressJS", "MongoDB"],
+    technologies: [
+      "React",
+      "Next",
+      "TypeScript",
+      "Node",
+      "Express",
+      "MongoDB",
+      "JWT",
+    ],
     isSelected: true,
     linkExternal: "https://topstore.vercel.app/",
     gradient:
