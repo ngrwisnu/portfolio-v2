@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h6 {
+    @apply text-2xl font-normal;
+  }
+
+  nav > ul li {
+    @apply p-4;
+  }
+}
+
+@layer components {
+  .col-center {
+    @apply flex-col items-center justify-center;
+  }
+
+  .row-center {
+    @apply items-center justify-center;
+  }
+
+  .container-content {
+    @apply mx-auto md:container xl:max-w-8xl;
+  }
+
+  .skills-title {
+    @apply mb-4 text-base font-semibold;
+  }
+
+  .before-el {
+    @apply absolute -left-16 -top-16 h-[112px] w-[112px] bg-[#00FFDD] blur-3xl;
+  }
+
+  .after-el {
+    @apply absolute -right-16 -bottom-16 h-[112px] w-[112px] bg-[#00FFDD] blur-3xl;
+  }
+
+  .tooltip:before {
+    font-size: 12px !important;
+    text-transform: none !important;
+  }
+
+  .hide-nav {
+    top: -100%;
+  }
+}
