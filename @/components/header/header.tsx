@@ -6,14 +6,9 @@ import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 
 const Header = () => {
-  const [isChecked, setIsChecked] = useState(false);
   const [isShow, setIsShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const headerRef = useRef(null);
-
-  const navLinkHandler = () => {
-    setIsChecked(false);
-  };
 
   const headerController = () => {
     if (typeof window != "undefined") {
@@ -50,47 +45,28 @@ const Header = () => {
         <div className="flex items-center rounded-md bg-[#404040]/90 px-14 backdrop-blur-sm">
           <nav className="w-full">
             <ul className="flex w-full items-center justify-center gap-4 text-xl font-light md:text-base md:font-normal">
-              <li>
-                <Link
-                  href="/"
-                  className="text-stone-300"
-                  onClick={navLinkHandler}
-                >
-                  Home
-                </Link>
+              <li className="p-4 text-neutral-300 transition-all duration-200 hover:text-white">
+                <Link href="/">Home</Link>
               </li>
-              <li>
-                <Link
-                  href="#works"
-                  className="text-stone-300"
-                  onClick={navLinkHandler}
-                >
-                  Works
-                </Link>
+              <li className="p-4 text-neutral-300 transition-all duration-200 hover:text-white">
+                <Link href="#works">Works</Link>
               </li>
-              <li>
-                <Link
-                  href="#about"
-                  className="text-stone-300"
-                  onClick={navLinkHandler}
-                >
-                  About
-                </Link>
+              <li className="p-4 text-neutral-300 transition-all duration-200 hover:text-white">
+                <Link href="#about">About</Link>
               </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="text-stone-300"
-                  onClick={navLinkHandler}
-                >
-                  Contact
-                </Link>
+              <li className="p-4 text-neutral-300 transition-all duration-200 hover:text-white">
+                <Link href="#contact">Contact</Link>
               </li>
             </ul>
           </nav>
         </div>
-        <Button className="absolute top-5 right-11 rounded-md">
-          <ArrowDownToLine size={18} /> Resume
+        <Button
+          className="absolute top-5 right-11 hidden rounded-md md:flex"
+          asChild
+        >
+          <Link href="/assets/docs/ngr-s-resume.pdf" download>
+            <ArrowDownToLine size={18} /> Resume
+          </Link>
         </Button>
       </header>
     </div>

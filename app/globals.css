@@ -6,10 +6,6 @@
   h6 {
     @apply text-2xl font-normal;
   }
-
-  nav > ul li {
-    @apply p-4;
-  }
 }
 
 @layer components {
