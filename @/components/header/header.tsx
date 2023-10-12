@@ -1,17 +1,11 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {
-  AlignJustify,
-  ArrowDownToLine,
-  Briefcase,
-  Home,
-  Phone,
-  User2,
-  X,
-} from "lucide-react";
+import { AlignJustify, ArrowDownToLine, X } from "lucide-react";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { desktopMenu, mobileMenu } from "./menu";
+import NavLink from "./nav-link";
 
 const Header = () => {
   const [isShow, setIsShow] = useState(true);
@@ -88,64 +82,29 @@ const Header = () => {
               isHamburgerActive ? "opacity-100" : "opacity-0"
             } z-50 mr-2 flex items-center gap-2 rounded-full bg-[#404040] text-sm transition-all duration-200`}
           >
-            <li className="flex h-12 w-12">
-              <Link
-                href="/"
-                className="flex flex-1 flex-col items-center justify-center self-stretch"
-              >
-                <Home />
-              </Link>
-            </li>
-            <li className="flex h-12 w-12">
-              <Link
-                href="/#works"
-                className="flex flex-1 flex-col items-center justify-center self-stretch"
-              >
-                <Briefcase />
-              </Link>
-            </li>
-            <li className="flex h-12 w-12">
-              <Link
-                href="/#about"
-                className="flex flex-1 flex-col items-center justify-center self-stretch"
-              >
-                <User2 />
-              </Link>
-            </li>
-            <li className="flex h-12 w-12">
-              <Link
-                href="/#contact"
-                className="flex flex-1 flex-col items-center justify-center self-stretch"
-              >
-                <Phone />
-              </Link>
-            </li>
-            <li className="flex h-12 w-12 rounded-full bg-neutral-900">
-              <Link
-                href="/assets/docs/ngr-s-resume.pdf"
-                className="flex flex-1 flex-col items-center justify-center self-stretch"
-                download
-              >
-                <ArrowDownToLine />
-              </Link>
-            </li>
+            {mobileMenu.map((menu) => (
+              <NavLink
+                key={menu.name}
+                className="flex h-12 w-12"
+                linkStyle="flex flex-1 flex-col items-center justify-center self-stretch"
+                href={menu.href}
+                name={menu.name}
+                iconOnly
+              />
+            ))}
           </ul>
         </div>
         <div className="hidden items-center rounded-md bg-[#404040]/90 px-14 backdrop-blur-sm md:flex">
           <nav className="w-full">
             <ul className="flex w-full items-center justify-center gap-4 text-xl font-light md:text-base md:font-normal">
-              <li className="p-4 text-neutral-300 transition-all duration-200 hover:text-white">
-                <Link href="/">Home</Link>
-              </li>
-              <li className="p-4 text-neutral-300 transition-all duration-200 hover:text-white">
-                <Link href="/#works">Works</Link>
-              </li>
-              <li className="p-4 text-neutral-300 transition-all duration-200 hover:text-white">
-                <Link href="/#about">About</Link>
-              </li>
-              <li className="p-4 text-neutral-300 transition-all duration-200 hover:text-white">
-                <Link href="/#contact">Contact</Link>
-              </li>
+              {desktopMenu.map((menu) => (
+                <NavLink
+                  key={menu.name}
+                  className="p-4 text-neutral-300 transition-all duration-200 hover:text-white"
+                  href={menu.href}
+                  name={menu.name}
+                />
+              ))}
             </ul>
           </nav>
         </div>
