@@ -21,9 +21,11 @@ const About = () => {
             high fidelity mockups.
           </p>
           <p>
-            In 2021, I started taking online courses to learn the basics of web
-            programming with HTML, CSS, and JavaScript. Since then, I have been
-            continuing to learn front-end web development.
+            In 2021, I began my journey into web development by learning the
+            basics of HTML, CSS, and JavaScript. Since then, I have been
+            passionate about front-end development and exploring its libraries
+            and frameworks, especially ReactJS and NextJS. I have also been
+            learning how to create a modular pages and consume APIs.
           </p>
         </div>
       </div>

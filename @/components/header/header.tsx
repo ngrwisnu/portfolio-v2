@@ -98,7 +98,7 @@ const Header = () => {
             </li>
             <li className="flex h-12 w-12">
               <Link
-                href="#works"
+                href="/#works"
                 className="flex flex-1 flex-col items-center justify-center self-stretch"
               >
                 <Briefcase />
@@ -106,7 +106,7 @@ const Header = () => {
             </li>
             <li className="flex h-12 w-12">
               <Link
-                href="#about"
+                href="/#about"
                 className="flex flex-1 flex-col items-center justify-center self-stretch"
               >
                 <User2 />
@@ -114,7 +114,7 @@ const Header = () => {
             </li>
             <li className="flex h-12 w-12">
               <Link
-                href="#contact"
+                href="/#contact"
                 className="flex flex-1 flex-col items-center justify-center self-stretch"
               >
                 <Phone />
@@ -138,13 +138,13 @@ const Header = () => {
                 <Link href="/">Home</Link>
               </li>
               <li className="p-4 text-neutral-300 transition-all duration-200 hover:text-white">
-                <Link href="#works">Works</Link>
+                <Link href="/#works">Works</Link>
               </li>
               <li className="p-4 text-neutral-300 transition-all duration-200 hover:text-white">
-                <Link href="#about">About</Link>
+                <Link href="/#about">About</Link>
               </li>
               <li className="p-4 text-neutral-300 transition-all duration-200 hover:text-white">
-                <Link href="#contact">Contact</Link>
+                <Link href="/#contact">Contact</Link>
               </li>
             </ul>
           </nav>

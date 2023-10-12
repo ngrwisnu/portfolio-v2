@@ -31,7 +31,7 @@ const SelectedWork = (props: SelectedWorkType) => {
       <Link href={`/works/${slug}`}>
         <div
           style={bgGradient}
-          className="work-content__image flex max-h-[656px] w-auto justify-end"
+          className="work-content__image flex max-h-[800px] w-auto justify-end"
         >
           <Image
             src={`/assets/images/${imgUrl}`}
