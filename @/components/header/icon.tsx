@@ -1,4 +1,11 @@
-import { ArrowDownToLine, Briefcase, Home, Phone, User2 } from "lucide-react";
+import {
+  ArrowDownToLine,
+  Briefcase,
+  Dot,
+  Home,
+  Phone,
+  User2,
+} from "lucide-react";
 
 const Icon = ({ name }: { name: string }) => {
   if (name === "Home") return <Home />;
@@ -6,6 +13,8 @@ const Icon = ({ name }: { name: string }) => {
   if (name === "About") return <User2 />;
   if (name === "Contact") return <Phone />;
   if (name === "Resume") return <ArrowDownToLine />;
+
+  return <Dot size={2} />;
 };
 
 export default Icon;
