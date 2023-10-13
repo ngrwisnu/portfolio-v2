@@ -6,6 +6,20 @@ import {
   ProjectGallery,
   ProjectJumbotron,
 } from "@/components/works/detail-work";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const project = data.find((obj) => obj.slug === params.slug);
+
+  return {
+    title: `${project?.title} - Project Details`,
+    description: `${project?.description}`,
+  };
+}
 
 const Work = ({ params }: { params: { slug: string } }) => {
   const item = data.find((obj) => obj.slug === params.slug);

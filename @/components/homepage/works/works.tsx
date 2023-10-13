@@ -6,7 +6,7 @@ const SelectedWorks = () => {
   return (
     <section id="works" className="w-full px-4 dark:text-white">
       <div className="container-content flex flex-col gap-10">
-        <h6>Projects</h6>
+        <h6>Works</h6>
         {data
           .map((work) => {
             if (work.isSelected === true) {
