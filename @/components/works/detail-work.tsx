@@ -90,11 +90,11 @@ const ProjectDescription = ({
 
 const ProjectGallery = ({ images }: { images: string[] | [] }) => {
   return (
-    <ul className="flex flex-col gap-24">
+    <ul className="flex flex-col gap-12 md:gap-24">
       {images.map((image) => (
         <li
           key={image}
-          className="flex max-h-[620px] w-full min-w-[360px] justify-center bg-[#F5F5F5]"
+          className="flex max-h-[620px] w-full justify-center bg-[#F5F5F5]"
         >
           <Image
             src={`/assets/images/${image}`}
