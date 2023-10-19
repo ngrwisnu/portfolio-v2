@@ -68,7 +68,7 @@ const ProjectDescription = ({
             <p className="mt-1 dark:text-stone-300">{role}</p>
           </div>
         </div>
-        {details && <div className="mt-8">{details}</div>}
+        {details && <div className="mt-8 w-full lg:w-3/5">{details}</div>}
       </div>
       <div className="order-1 basis-full md:order-2 md:basis-1/3">
         <h5>
@@ -88,24 +88,8 @@ const ProjectDescription = ({
   );
 };
 
-const ProjectGallery = ({ images }: { images: string[] | [] }) => {
-  return (
-    <ul className="flex flex-col gap-12 md:gap-24">
-      {images.map((image) => (
-        <li
-          key={image}
-          className="flex max-h-[620px] w-full justify-center bg-[#F5F5F5]"
-        >
-          <Image
-            src={`/assets/images/${image}`}
-            width={1184}
-            height={620}
-            alt="gallery"
-          />
-        </li>
-      ))}
-    </ul>
-  );
+const ProjectGallery = ({ children }: { children: React.ReactNode }) => {
+  return <>{children}</>;
 };
 
 const ProjectDetail = ({ children }: { children: React.ReactNode }) => {

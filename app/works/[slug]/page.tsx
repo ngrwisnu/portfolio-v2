@@ -7,6 +7,9 @@ import {
   ProjectJumbotron,
 } from "@/components/works/detail-work";
 import { Metadata } from "next";
+import detail from "@/components/works/blackhoney-detail";
+import Gallery from "@/components/works/gallery";
+import BlackHoneyGallery from "@/components/works/blackhoney-gallery";
 
 export async function generateMetadata({
   params,
@@ -36,15 +39,31 @@ const Work = ({ params }: { params: { slug: string } }) => {
           />
 
           {/* Description */}
-          <ProjectDescription
-            description={item.description}
-            designedBy={item.designedBy}
-            role={item.myRole}
-            techs={item.technologies}
-          />
+          {item.slug === "black-honey" ? (
+            <ProjectDescription
+              description={item.description}
+              designedBy={item.designedBy}
+              role={item.myRole}
+              techs={item.technologies}
+              details={detail}
+            />
+          ) : (
+            <ProjectDescription
+              description={item.description}
+              designedBy={item.designedBy}
+              role={item.myRole}
+              techs={item.technologies}
+            />
+          )}
 
           {/* Image gallery */}
-          <ProjectGallery images={item.imgUrls.slice(2)} />
+          <ProjectGallery>
+            {item.slug === "black-honey" ? (
+              <BlackHoneyGallery images={item.imgUrls} />
+            ) : (
+              <Gallery images={item.imgUrls.slice(2)} />
+            )}
+          </ProjectGallery>
         </>
       )}
     </ProjectDetail>
