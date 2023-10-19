@@ -26,9 +26,9 @@ const Hero = () => {
                   aria-label="Ngr's description"
                   className="self-stretch text-lg font-normal leading-[30px] md:text-xl"
                 >
-                  is a web developer, skilled in both front-end and back-end
-                  development, with a focus on using JavaScript and its
-                  libraries to build modern web applications.
+                  is a front-end web developer, skilled in ui design, front-end,
+                  and back-end development, with a focus on using JavaScript and
+                  its libraries to build modern web applications.
                 </p>
               </div>
             </div>

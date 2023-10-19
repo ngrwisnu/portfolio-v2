@@ -111,6 +111,35 @@ const data: WorksType[] = [
     designedBy: "BuildWithAngga",
     myRole: "Front-end Developer",
   },
+  {
+    id: 13,
+    slug: "black-honey",
+    title: "Black Honey",
+    description:
+      "BlackHoney is a small farm where produces and sells their own delicious Black Honey. Their bees are free to roam and forage, the honey is produced using only natural methods.",
+    imgUrls: [
+      "blackhoney-preview.png",
+      "blackhoney-jumbotron.webp",
+      "blackhoney-mock-1.webp",
+      "blackhoney-mock-2.webp",
+      "blackhoney-mock-3.webp",
+      "blh-wr-1.webp",
+      "blh-wr-2.webp",
+      "blh-wr-3.webp",
+      "blh-wr-4.webp",
+      "blh-wr-5.webp",
+      "blh-wr-6.webp",
+      "blh-wr-7.webp",
+      "blh-wr-8.webp",
+    ],
+    technologies: ["React", "Next", "TypeScript", "Tailwind", "API", "JWT"],
+    isSelected: true,
+    linkExternal: "https://blackhoney.vercel.app/",
+    gradient:
+      "linear-gradient(63.82deg,#F4EADC 10.51%,rgba(255, 255, 255, 0) 117.73%)",
+    designedBy: "Ngr Wisnu",
+    myRole: "UI Designer & Front-end Developer",
+  },
 ];
 
 export default data;
