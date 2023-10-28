@@ -20,7 +20,7 @@ const Hero = () => {
                   aria-label="author-name"
                   className="self-stretch text-lg font-semibold uppercase leading-[30px] tracking-[0.5px] md:text-xl"
                 >
-                  Ngr Wisnu
+                  Ngr Wisnu Adiprayogo
                 </div>
                 <p
                   aria-label="Ngr's description"

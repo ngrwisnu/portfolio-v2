@@ -7,11 +7,12 @@ const Skills = () => {
     others: [
       "ui/ux",
       "figma",
-      "resp api",
+      "rest api",
       "mongodb",
       "postgresql",
       "prisma",
       "typescript",
+      "docker",
     ],
   };
 
