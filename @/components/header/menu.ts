@@ -12,7 +12,7 @@ const mobileMenu = [
   { name: "Contact", href: "/#contact" },
   {
     name: "Resume",
-    href: "/assets/docs/ngr-s-resume.pdf",
+    href: "/assets/docs/CV-Ngr-Wisnu-Adiprayogo.pdf",
   },
 ];
 

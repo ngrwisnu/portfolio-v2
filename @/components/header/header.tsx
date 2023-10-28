@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { AlignJustify, ArrowDownToLine, X } from "lucide-react";
-import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { desktopMenu, mobileMenu } from "./menu";
 import NavLink from "./nav-link";
@@ -50,7 +49,8 @@ const Header = () => {
     >
       <header className="static flex w-full items-start justify-center self-stretch py-5 text-neutral-100 md:relative">
         <div
-          className="fixed right-4 bottom-14 z-[999] flex h-12 w-12 items-center justify-center rounded-full bg-neutral-800 md:hidden"
+          id="floating menu"
+          className="fixed right-4 bottom-14 z-[999] flex h-12 w-12 items-center justify-center rounded-full bg-[#404040] md:hidden"
           aria-label="nav menu"
           onClick={hamburgerHandler}
         >
@@ -112,9 +112,12 @@ const Header = () => {
           className="absolute top-5 right-11 hidden rounded-md md:flex"
           asChild
         >
-          <Link href="/assets/docs/ngr-s-resume.pdf" download>
+          <a
+            href="/assets/docs/CV-Ngr-Wisnu-Adiprayogo.pdf"
+            download="CV-Ngr-Wisnu-Adiprayogo"
+          >
             <ArrowDownToLine size={18} /> Resume
-          </Link>
+          </a>
         </Button>
       </header>
     </div>
