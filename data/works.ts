@@ -31,7 +31,7 @@ const data: WorksType[] = [
     slug: "idcamp-2022",
     title: "IDCamp 2022",
     description:
-      "Web page project where we need to implement some criteria like semantic elements, CSS styling and layouting.",
+      "Created as a submission for IDCamp 2022. This project is built using HTML, CSS, and Javasript.",
     imgUrls: ["idcamp-preview.jpg"],
     technologies: ["HTML", "CSS", "JavaScript"],
     isSelected: false,
