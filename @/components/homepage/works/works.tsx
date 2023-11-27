@@ -1,6 +1,8 @@
 import React from "react";
 import SelectedWork from "./selected-work";
 import data from "../../../../data/works";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const SelectedWorks = () => {
   return (
@@ -23,6 +25,11 @@ const SelectedWorks = () => {
             }
           })
           .reverse()}
+        <div className="flex items-center justify-center">
+          <Button variant="outline" asChild>
+            <Link href="/works">More Works</Link>
+          </Button>
+        </div>
       </div>
     </section>
   );

@@ -23,7 +23,7 @@ const ProjectJumbotron = ({ title, image, webLink }: ProjectJumbotronProps) => {
       <h2 className="text-3xl font-medium">{title}</h2>
       {webLink && (
         <Button asChild>
-          <Link href={webLink}>Visit Site</Link>
+          <Link href={webLink}>Live Demo</Link>
         </Button>
       )}
       <figure className="flex max-h-[620px] w-full justify-center bg-[#F5F5F5]">
