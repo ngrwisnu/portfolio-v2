@@ -143,6 +143,7 @@ const data: WorksType[] = [
       "API",
       "JWT",
       "Express",
+      "jQuery",
       "EJS",
       "SCSS",
       "Bootstrap",
