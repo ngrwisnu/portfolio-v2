@@ -10,7 +10,7 @@ const detail = (
           <strong>
             The user contacts with the seller to ask the product&apos;s stock.
           </strong>
-          This can be a problem for the seller because it can be time- consuming
+          This can be a problem for the seller because it can be time-consuming
           to answer all of the customer&apos;s questions individually.
           Additionally, it can be difficult to keep track of inventory levels in
           real time
@@ -33,7 +33,7 @@ const detail = (
         The new website of Black Honey can solve these problems by providing a
         self-service experience for customers. Customers can use the website to
         check the stock and price of products on their own time, without having
-        to chat with a seller
+        to chat with a seller.
       </p>
     </div>
   </>
