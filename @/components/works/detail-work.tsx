@@ -102,4 +102,42 @@ const ProjectDetail = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export { ProjectDetail, ProjectJumbotron, ProjectDescription, ProjectGallery };
+const FeatureHistoryPage = () => {
+  return (
+    <div className="flex w-full flex-col">
+      <h5 className="mb-1">
+        <strong>Feature History</strong>
+      </h5>
+      <table className="border-collapse">
+        <thead className="flex flex-col text-left">
+          <tr className="flex flex-row border-b border-b-slate-300">
+            <th className="basis-1/4 p-2">Version</th>
+            <th className="basis-3/4 p-2">Description</th>
+          </tr>
+        </thead>
+        <tbody className="flex w-full flex-col">
+          <tr className="flex flex-row">
+            <td className="flex basis-1/4 items-center p-2">1.2.0</td>
+            <td className="flex basis-3/4 items-center p-2">
+              implemented Midtrans payment gateway
+            </td>
+          </tr>
+          <tr className="flex flex-row">
+            <td className="flex basis-1/4 items-center p-2">1.1.0</td>
+            <td className="flex basis-3/4 items-center p-2">
+              implemented OAuth 2.0
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export {
+  ProjectDetail,
+  ProjectJumbotron,
+  ProjectDescription,
+  ProjectGallery,
+  FeatureHistoryPage,
+};

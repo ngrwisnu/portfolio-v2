@@ -5,6 +5,7 @@ import {
   ProjectDetail,
   ProjectGallery,
   ProjectJumbotron,
+  FeatureHistoryPage,
 } from "@/components/works/detail-work";
 import { Metadata } from "next";
 import detail from "@/components/works/blackhoney-detail";
@@ -64,6 +65,11 @@ const Work = ({ params }: { params: { slug: string } }) => {
               <Gallery images={item.imgUrls.slice(2)} />
             )}
           </ProjectGallery>
+
+          {/* Update history */}
+          {item.slug === "black-honey" && (
+            <FeatureHistoryPage></FeatureHistoryPage>
+          )}
         </>
       )}
     </ProjectDetail>
