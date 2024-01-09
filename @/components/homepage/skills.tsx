@@ -2,7 +2,15 @@ import React from "react";
 
 const Skills = () => {
   const skills = {
-    fe: ["javascript", "react", "next", "sass", "bootstrap", "tailwind"],
+    fe: [
+      "javascript",
+      "jQuery",
+      "react",
+      "next",
+      "sass",
+      "bootstrap",
+      "tailwind",
+    ],
     be: ["node", "express"],
     others: [
       "ui/ux",
