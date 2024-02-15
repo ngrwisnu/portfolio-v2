@@ -117,6 +117,12 @@ const FeatureHistoryPage = () => {
         </thead>
         <tbody className="flex w-full flex-col">
           <tr className="flex flex-row">
+            <td className="flex basis-1/4 items-center p-2">1.3.0</td>
+            <td className="flex basis-3/4 items-center p-2">
+              new feature to delete the account
+            </td>
+          </tr>
+          <tr className="flex flex-row">
             <td className="flex basis-1/4 items-center p-2">1.2.0</td>
             <td className="flex basis-3/4 items-center p-2">
               implemented Midtrans payment gateway
